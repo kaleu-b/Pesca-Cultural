@@ -128,11 +128,3 @@ if (fullscreenButton && gameWrapper) {
         }
     });
 }
-
-// Debug F
-const gameOverScreen = document.getElementById('game-over-screen');
-window.addEventListener('keydown', (e) => {
-    if (e.key === 'f' && gameOverScreen) {
-        gameOverScreen.classList.toggle('active');
-    }
-});

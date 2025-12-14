@@ -281,13 +281,16 @@ body {
 #pause-button {
     top: 10px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(calc(-50% - 25px));
 }
 
 /* Posição Específica do Mute (Canto superior direito) */
 #mute-button {
     top: 10px;
-    right: 10px;
+    right: auto;
+    left: 50%;
+    /* Move o botão 25px para a direita (metade da largura + metade do espaçamento) */
+    transform: translateX(calc(-50% + 25px));
 }
 
 /* Utilitário para esconder ícones */
