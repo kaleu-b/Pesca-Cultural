@@ -10,13 +10,16 @@ export class Menu extends Phaser.Scene {
         const width = this.scale.width;
         const height = this.scale.height;
 
-        // Background preto
-        this.cameras.main.setBackgroundColor(0x000000);
-
+        // Background com imagem do pier
+        this.add.image(width / 2, height / 2, 'telainicial')
+            .setDisplaySize(width, height)
+            .setOrigin(0.5, 0.5)
+            .setDepth(-1);
+        
         // Texto introdutório (primeira parte)
         this.add.text(width / 2, height * 0.15, 'Você é um pescador, que ao ver os preciosos tesouros do Museu de São José perdidos no mar, decide pesca-los.', {
-            fontSize: '20px',
-            fill: '#ffffff',
+            fontSize: '25px',
+            fill: '#FFFFFF',
             fontFamily: 'Arial, sans-serif',
             align: 'center',
             wordWrap: { width: width * 0.9 }
@@ -24,8 +27,8 @@ export class Menu extends Phaser.Scene {
 
         // Texto instrucional (segunda parte)
         this.add.text(width / 2, height * 0.45, 'Pesque os tesouros, mas evite as baleias e os peixes. Use o mouse ou toque na tela para controlar o anzol.', {
-            fontSize: '20px',
-            fill: '#ffffff',
+            fontSize: '25px',
+            fill: '#FFFFFF',
             fontFamily: 'Arial, sans-serif',
             align: 'center',
             wordWrap: { width: width * 0.9 }

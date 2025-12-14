@@ -455,6 +455,13 @@ export class Play extends Phaser.Scene {
 
         if(this.score >= 1000 && this.lives > 0){
             // Efeito visual de final do jogo
+            
+        // Background com imagem do pier
+        this.add.image(this.scale.width / 2, this.scale.height / 2, 'telafinal')
+            .setDisplaySize(this.scale.width, this.scale.height)
+            .setOrigin(0.5, 0.5)
+            .setDepth(199);
+            
             this.add.text(
                 this.scale.width / 2,
                 this.scale.height / 2,
