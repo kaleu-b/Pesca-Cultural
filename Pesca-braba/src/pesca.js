@@ -131,7 +131,7 @@ export class Play extends Phaser.Scene {
         this.baitHitbox = this.add.rectangle(width / 2, height / 2, 15, 15, 0xff0000, 0.5);
         this.baitHitbox.setOrigin(0.5, 0.5);  // Define a origem para o centro
         this.baitHitbox.setStrokeStyle(2, 0xffffff);  // Adiciona contorno branco
-        this.baitHitbox.setVisible(true);  // Torna visível para debugging
+        this.baitHitbox.setVisible(false);  // Torna visível para debugging
 
         // === Criação da imagem da isca ===
         // A imagem da isca seguirá a posição da hitbox
@@ -567,7 +567,7 @@ export class Play extends Phaser.Scene {
         const fishHitbox = this.add.rectangle(fish.x, fish.y, fish.width, fish.height, 0xff0000, 0.4);
         fishHitbox.setOrigin(0.5, 0.5);  // Define a origem para o centro
         fishHitbox.setStrokeStyle(2, 0xff0000);  // Adiciona contorno vermelho
-        fishHitbox.setVisible(true);  // Torna visível para debugging
+        fishHitbox.setVisible(false);  // Torna visível para debugging
 
         // Se vier da direita, inverte o sprite (espelhado)
         if (!fromLeft) {
@@ -607,7 +607,7 @@ export class Play extends Phaser.Scene {
             const whaleHitbox = this.add.rectangle(whale.x, whale.y, whale.width, whale.height, 0x0000ff, 0.4);
             whaleHitbox.setOrigin(0.5, 0.5);  // Define a origem para o centro
             whaleHitbox.setStrokeStyle(2, 0x0000ff);  // Adiciona contorno azul
-            whaleHitbox.setVisible(true);  // Torna visível para debugging
+            whaleHitbox.setVisible(false);  // Torna visível para debugging
 
             // Se vier da direita, inverte o sprite (espelhado)
             if (!fromLeft) {
@@ -653,7 +653,7 @@ export class Play extends Phaser.Scene {
         );
         treasureHitbox.setOrigin(0.5, 0.5);  // Define a origem para o centro
         treasureHitbox.setStrokeStyle(2, 0x00ff00);  // Adiciona contorno verde
-        treasureHitbox.setVisible(true);  // Torna visível para debugging
+        treasureHitbox.setVisible(false);  // Torna visível para debugging
 
         // Se vier da direita, inverte o sprite (espelhado)
         if (!fromLeft) {
