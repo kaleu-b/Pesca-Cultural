@@ -110,7 +110,7 @@ export class Play extends Phaser.Scene {
 
         // === Configuração de escalas relativas ao tamanho da tela ===
         this.playerScale = width / 600;  // Escala proporcional para o pescador
-        this.baitScale = this.playerScale * 0.1;  // Escala proporcional para a isca
+        this.baitScale = this.playerScale * 0.15;  // Escala proporcional para a isca
 
         // === Criação do pescador ===
         // Posiciona o pescador em um ponto fixo da tela (não depende do pier)

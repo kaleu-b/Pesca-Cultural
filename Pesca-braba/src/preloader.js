@@ -17,7 +17,7 @@ export class Preloader extends Phaser.Scene {
         // Carrega a imagem da isca
         this.load.image(
             'bait',  // Chave única para referenciar este asset
-            '/assets/fishing-rod-hook-icon-fish-hook-fish-catch-fishing-tip-victim-bait-trap-free-vector-2287970379.jpg'
+            '/assets/bait.webp'
         );
 
         // === Carregamento dos peixes ===
@@ -84,7 +84,7 @@ export class Preloader extends Phaser.Scene {
         this.load.audio('bgm7', '/assets/sounds/bgm7.mp3');
 
         // === TELAS DE FUNDO ===
-        this.load.image('telafinal', '/assets/tela inicial//ending-screen.png');
+        this.load.image('telafinal', '/assets/tela final/ending-screen.png');
         this.load.image('telainicial', '/assets/tela inicial/start-menu-image-2.png');
     }
 
