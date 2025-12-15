@@ -84,8 +84,8 @@ export class Preloader extends Phaser.Scene {
         this.load.audio('bgm7', '/assets/sounds/bgm7.mp3');
 
         // === TELAS DE FUNDO ===
-        this.load.image('telafinal', '/assets/tela inicial/pier_inicial_teste.jpeg');
-        this.load.image('telainicial', '/assets/tela inicial/pier_inicial.png');
+        this.load.image('telafinal', '/assets/tela inicial//ending-screen.png');
+        this.load.image('telainicial', '/assets/tela inicial/start-menu-image-2.png');
     }
 
     // Método create: executado após o carregamento dos assets
