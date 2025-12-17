@@ -5,15 +5,23 @@ let gameInstance = null;
 let isPaused = false;
 
 // --- Lógica das Abas ---
-const tabButtons = document.querySelectorAll('.tab-button');
-const tabContents = document.querySelectorAll('.tab-content');
-tabButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        tabButtons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
-        tabContents.forEach(content => content.classList.add('hidden'));
-        const tabId = button.getAttribute('data-tab');
-        document.getElementById(tabId).classList.remove('hidden');
+// page.js - Adicione esta função se ainda não existir
+document.addEventListener('DOMContentLoaded', function() {
+    const tabButtons = document.querySelectorAll('.tab-button');
+    
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove a classe active de todos os botões e conteúdos
+            document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.add('hidden'));
+            
+            // Adiciona active ao botão clicado
+            button.classList.add('active');
+            
+            // Mostra o conteúdo correspondente
+            const tabId = button.getAttribute('data-tab');
+            document.getElementById(tabId).classList.remove('hidden');
+        });
     });
 });
 
