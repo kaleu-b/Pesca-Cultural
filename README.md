@@ -48,7 +48,7 @@ Oferecer uma experiência divertida e educativa, promovendo a valorização da a
 
 ### 🤖 Aonde jogar
 
-O jogo se encontra na página do **[Museu Histórico de São José](adicionar_link_aqui_no_futuro)**. Mas, caso não consiga acessar o site do museu, também temos uma versão disponível no **[vercel](https://pesca-cultural.vercel.app/)**. Alternativamente, você pode rodar o jogo na sua máquina local. 
+O jogo se encontra na página do **[Museu Histórico de São José](http://extensaoads.sj.ifsc.edu.br:3000/jogos)**. Mas, caso não consiga acessar o site do museu, também temos uma versão disponível no **[vercel](https://pesca-cultural.vercel.app/)**. Alternativamente, você pode rodar o jogo na sua máquina local. 
 
 ### 👨‍💻 Como rodar o jogo (localmente)
 
@@ -61,4 +61,15 @@ O jogo se encontra na página do **[Museu Histórico de São José](adicionar_li
 * Depois execute o comando 'npm run dev'. Deve aparecer um link parecido com 'https:://localhost:5500' na tela. Copie e cole no seu navegador.
 
 ---
-###### Projeto desenvolvido por Kaléu Borges Augusto, Daniel Bentes Perquim e Andrey Rosa Nunis como parte da disciplina "Atividades de Extensão I".
+
+### Créditos
+
+Foto de final bom: https://www.nsctotal.com.br/noticias/novo-trapiche-de-sao-jose-passa-por-recuperacao
+
+Foto de início: https://www.deolhonailha.com.br/florianopolis/noticias/grande-florianopolis-vive-boom-imobiliario-e-reforca-demanda-por-moradia-acessivel/
+
+Sprite do pescador: https://liberatedpixelcup.github.io/Universal-LPC-Spritesheet-Character-Generator/
+
+---
+
+###### Projeto desenvolvido por Kaléu Borges Augusto, Daniel Bentes Perquim e Andrey Rosa Nunis como parte da disciplina "Atividades de Extensão I". Projeto feito com fins pedagógicos e não lucrativos. 
